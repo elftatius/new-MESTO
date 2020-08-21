@@ -1,0 +1,14 @@
+.link {
+  display: inline-block;
+  line-height: 40px;
+  width: 100%;
+  border: 1px solid black;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+.link:hover {
+  background-color: black;
+  color: white;
+}

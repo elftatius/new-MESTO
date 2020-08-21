@@ -1,0 +1,15 @@
+@import url(./_editing/button_editing.css);
+
+.button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  display: block;
+  cursor: pointer;
+}
+
+
+.button:focus {
+  outline-color: greenyellow;
+}
+
