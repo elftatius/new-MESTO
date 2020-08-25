@@ -1,4 +1,4 @@
-class CardForm {
+export default class CardForm {
   constructor(form, cardList, popup, resetButton, createCard, api) {
     this._form = form;
     this._api = api;

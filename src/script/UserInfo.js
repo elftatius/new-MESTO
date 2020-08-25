@@ -1,4 +1,4 @@
-class UserInfo {
+export default class UserInfo {
   constructor(nameContainer, descriptionContainer, form, popup, api, photoBox) {
     this._nameContainer = nameContainer;
     this._descriptionContainer = descriptionContainer;

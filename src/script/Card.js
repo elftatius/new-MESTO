@@ -1,4 +1,4 @@
-class Card {
+export default class Card {
   static _template = document.querySelector('#card-template').content;
 
   constructor({ name, link, likes, ownerId, _id }, openImageCallback, api) {

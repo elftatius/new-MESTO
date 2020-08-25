@@ -5,23 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
-  <link rel="stylesheet" href="./pages/index.css">
-  <script src="script/Api.js"></script>
-  <script src="script/Card.js" defer></script>
-  <script src="script/CardList.js" defer></script>
-  <script src="script/FormValidator.js" defer></script>
-  <script src="script/CardForm.js" defer></script>
-  <script src="script/Popup.js" defer></script>
-  <script src="script/UserInfo.js" defer></script>
-  <script src="script/errorMessages.js" defer></script>
-  <script src="script/cards.js" defer></script>
-  <script src="script/index.js" defer></script>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  
 
 </head>
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -56,7 +47,7 @@
     </div>
     <div class="popup" id="add-card-popup">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close" id="add-card-popup-close">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close" id="add-card-popup-close">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" novalidate name="add-card">
           <div class="input-container">
@@ -74,7 +65,7 @@
 
     <div class="popup" id="edit-profile-popup">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close" id="edit-profile-popup-close">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close" id="edit-profile-popup-close">
         <h3 class="popup__title">Редактировать профиль</h3>
         <form class="popup__form" novalidate name="edit-profile">
           <div class="input-container">
@@ -92,14 +83,14 @@
 
     <div class="popup" id="picture-popup">
       <div class="popup__picture-container">
-        <img src="./images/close.svg" alt="" class="popup__close" id="picture-popup-close">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close" id="picture-popup-close">
         <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg" alt="" class="popup__picture">
       </div>
     </div>
 
     <div class="popup" id="network-error-popup">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup__close" id="network-error-popup-close">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close" id="network-error-popup-close">
         <h3 class="popup__title">Упс 😣</h3>
         <p>
           Ошибка соединения с сервером. Проверьте подключение к интернету и попробуйте снова.
@@ -114,11 +105,12 @@
 
     <template style="display: none;" id="picture-template">
       <div class="popup__picture-container">
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close">
         <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg" alt="" class="popup__picture">
       </div>
     </template>
 
   </div>
+  <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>

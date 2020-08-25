@@ -1,4 +1,4 @@
-class FormValidator {
+export default class FormValidator {
   constructor(form, errorMessages) {
     this._form = form;
     this._submitButton = form.querySelector('.popup__button');
