@@ -1,5 +1,5 @@
 export default class Api {
-  static endpoint = "https://nomoreparties.co";
+  static endpoint = NODE_ENV === 'development' ? 'http://nomoreparties.co' : 'https://nomoreparties.co';
 
   constructor(cohortId, token) {
     this._cohortId = cohortId;

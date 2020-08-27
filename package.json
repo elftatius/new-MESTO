@@ -2,10 +2,10 @@
   "name": "praktikum",
   "homepage": "https://elftatius.github.io/praktikum/",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "new-Mesto is a project aimed at improving the skills of working with html, css, js, webpack, babel, node.js. It also serves as a certification practical work during the course of a web developer at the Yandex.practicum academy.",
+  "main": "./src/script/index.js",
   "scripts": {
-    "build": "NODE_ENV=production rimraf dist && webpack --mode production",
+    "build": "rimraf dist && cross-env NODE_ENV=production webpack --mode production",
     "dev": "NODE_ENV=development webpack-dev-server --mode development --open 'Google Chrome' --watch",
     "deploy": "NODE_ENV=production gh-pages -d dist"
   },
